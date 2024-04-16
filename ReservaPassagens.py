@@ -1,10 +1,18 @@
 class CompanhiaAerea:
     def __init__(self):
-        # Dados dos voos (número, origem, destino e lugares disponíveis)
         self.voos = {
             101: {"origem": "Seattle", "destino": "Los Angeles", "lugares": 50},
-            102: {"origem": "New York", "destino": "Chicago", "lugares": 40},
-            # Adicione mais voos aqui...
+            102: {"origem": "New York", "destino": "Chicago", "lugares": 10},
+            103: {"origem": "New York", "destino": "Chicago", "lugares": 1},
+            104: {"origem": "New York", "destino": "Chicago", "lugares": 1},
+            105: {"origem": "New York", "destino": "Chicago", "lugares": 16},
+            106: {"origem": "New York", "destino": "Chicago", "lugares": 100},
+            107: {"origem": "New York", "destino": "Chicago", "lugares": 13333},
+            108: {"origem": "New York", "destino": "Chicago", "lugares": 12},
+            109: {"origem": "New York", "destino": "Chicago", "lugares": 133},
+            110: {"origem": "New York", "destino": "Chicago", "lugares": 444},
+            111: {"origem": "New York", "destino": "Chicago", "lugares": 6},
+            112: {"origem": "New York", "destino": "Chicago", "lugares": 72},
         }
 
     def consultar_por_numero(self, numero_voo):
@@ -30,6 +38,7 @@ class CompanhiaAerea:
             if voo["lugares"] > 0:
                 voo["lugares"] -= 1
                 print("Reserva confirmada. Assento reservado.")
+                self.consultar_por_numero(numero_voo)
             else:
                 print("Voo lotado. Não há lugares disponíveis.")
         else:
