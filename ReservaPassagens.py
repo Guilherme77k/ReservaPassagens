@@ -1,18 +1,18 @@
 class CompanhiaAerea:
     def __init__(self):
         self.voos = {
-            101: {"origem": "Seattle", "destino": "Los Angeles", "lugares": 50},
-            102: {"origem": "New York", "destino": "Chicago", "lugares": 10},
-            103: {"origem": "New York", "destino": "Chicago", "lugares": 1},
-            104: {"origem": "New York", "destino": "Chicago", "lugares": 1},
+            101: {"origem": "São Paulo", "destino": "Belo Horizonte", "lugares": 50},
+            102: {"origem": "Belo Horizonte", "destino": "São Paulo", "lugares": 10},
+            103: {"origem": "Rio de Janeiro", "destino": "Belo Horizonte", "lugares": 1},
+            104: {"origem": "Belo Horizonte", "destino": "Rio de Janeiro", "lugares": 1},
             105: {"origem": "New York", "destino": "Chicago", "lugares": 16},
-            106: {"origem": "New York", "destino": "Chicago", "lugares": 100},
-            107: {"origem": "New York", "destino": "Chicago", "lugares": 13333},
-            108: {"origem": "New York", "destino": "Chicago", "lugares": 12},
-            109: {"origem": "New York", "destino": "Chicago", "lugares": 133},
-            110: {"origem": "New York", "destino": "Chicago", "lugares": 444},
-            111: {"origem": "New York", "destino": "Chicago", "lugares": 6},
-            112: {"origem": "New York", "destino": "Chicago", "lugares": 72},
+            106: {"origem": "Brasil", "destino": "Chile", "lugares": 100},
+            107: {"origem": "Chile", "destino": "Brasil", "lugares": 13333},
+            108: {"origem": "Argentina", "destino": "Brasil", "lugares": 12},
+            109: {"origem": "Brasil", "destino": "Argentina", "lugares": 133},
+            110: {"origem": "Rússia", "destino": "Alemanha", "lugares": 444},
+            111: {"origem": "Alemanha", "destino": "Rússia", "lugares": 6},
+            112: {"origem": "Bahia", "destino": "Acre", "lugares": 72},
         }
 
     def consultar_por_numero(self, numero_voo):
